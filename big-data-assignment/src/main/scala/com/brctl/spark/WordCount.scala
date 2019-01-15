@@ -11,7 +11,7 @@ object WordCount {
 
     // read local file
     val filePath = "file:///Users/duanxiaoxing/Github/graduate-student/" +
-      "big-data-assignment/file/toWordCount.txt"
+      "big-data-assignment/input/to_word_count.txt"
     val file = sc.textFile(filePath)
     // rdd transform & action
     file.flatMap(line => line.split(" "))
